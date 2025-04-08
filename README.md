@@ -9,7 +9,8 @@
    - [模型架構比較](#模型架構比較)
 - [使用到的模組及版本](#使用到的模組及版本)
 # 簡介
- 使用OpenCV來獲取手寫數字，搭配預先訓練好的神經網路模型，進行辨識再顯示結果，一個簡易的手寫數字辨識器就此誕生 :exclamation: :exclamation: :exclamation:
+ 使用OpenCV來獲取手寫數字，搭配預先訓練好的神經網路模型，進行辨識再顯示結果，一個簡易的手寫數字辨識器就此誕生':exclamation::exclamation::exclamation:'
+ :exclamation:
 # 操作方法
  執行程式後，會有操作說明視窗，請遵循說明操作。
 > [!IMPORTANT]
