@@ -62,7 +62,7 @@
 
    ![image](/picture/架構比較.bmp)\
    :large_orange_diamond: 架構設計順序: 架構1:arrow_right:架構2:arrow_right:架構3\
-   :large_orange_diamond 
+    :large_orange_diamond 1321
    
 </details>
 
