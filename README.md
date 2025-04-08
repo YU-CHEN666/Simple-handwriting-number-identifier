@@ -62,7 +62,9 @@
 
    ![image](/picture/架構比較.bmp)\
    :large_orange_diamond: 架構設計順序: 架構1:arrow_right:架構2:arrow_right:架構3\
-   :large_orange_diamond:1321
+   :large_orange_diamond: 對於ELAN:\
+    :small_orange_diamond: 架構1: 使用1x1捲積進行分割。\
+    :small_orange_diamond: 架構2,3: 使用自定義層進行分割，而且不涉及任何參數的訓練。
    
 </details>
 
