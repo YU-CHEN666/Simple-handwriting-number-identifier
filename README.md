@@ -43,6 +43,7 @@
    ![image](/picture/數字7注意事項/2.png)
     
 </details>
+
 # 模型
 
 # 使用到的模組及版本
