@@ -27,9 +27,9 @@
 <summary>會觸發警告的範例</summary>
 
 1.一位數時:書寫數字5的時候不連續，有斷點。\
-![image](/picture/觸發警告範例/1-0.bmp)\
+![image](/picture/觸發警告範例/1-0.bmp)
 2.二位數時:數字歪斜+間隔過近。\
-![image](/picture/觸發警告範例/2-0.png)\
+![image](/picture/觸發警告範例/2-0.png)
 
 </details>
    
