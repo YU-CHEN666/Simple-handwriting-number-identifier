@@ -16,7 +16,7 @@
 <summary>關閉警告、結果視窗(按下最左邊的三角型展開內容)</summary>
 
 有以下兩種方式:\
-1.按下視窗右上角的X。[123]([/result_1.png](https://github.com/YU-CHEN666/test-activation/blob/main/result_1.png))\
+1.按下視窗右上角的X。![image](\result_1.png))\
 2.按下任意鍵
 **(推薦使用此方式)**。\
 **若使用方式1的話，_所有鍵盤操作必須按2次，程式才會有反應_**，因此建議使用方法2。
