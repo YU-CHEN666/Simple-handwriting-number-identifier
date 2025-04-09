@@ -101,6 +101,14 @@
 
 </details>
 
-:ballot_box_with_check:最終決定選擇，架構2紅色框框的Epoch做為辨識器的模型。
+:white_check_mark:最終決定選擇，架構2紅色框框的Epoch做為辨識器的模型。
 # 使用到的模組及版本
+:atom:Python=3.12(我大膽猜測更低的版本也行，因為主要都是靠模組在操作)\
+|模組|版本|
+|:---:|:---:|
+|numpy|1.26.4|
+|opencv|4.10.0.84|
+|tensorflow|2.17.0|
+|keras|3.5.0|
+
 
