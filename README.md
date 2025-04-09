@@ -9,6 +9,7 @@
    - [模型架構比較](#模型架構比較)
    - [架構1訓練過程](#架構1訓練過程)
    - [架構2訓練過程](#架構2訓練過程)
+   - [架構3訓練過程](#架構3訓練過程)
 - [使用到的模組及版本](#使用到的模組及版本)
 # 簡介
  使用OpenCV來獲取手寫數字，搭配預先訓練好的神經網路模型，進行辨識再顯示結果，一個簡易的手寫數字辨識器就此誕生 :exclamation: :exclamation: :exclamation: :exclamation: :exclamation:
@@ -116,7 +117,6 @@
    :large_orange_diamond: 對於ELAN:
    - 架構1: 使用1x1捲積進行分割。
    - 架構2&3: 使用自定義層進行分割，而且不涉及任何參數的訓練。
-
 </details>
 <details>
  <a name="架構1訓練過程"></a>
@@ -126,7 +126,6 @@
  ![image](/picture/架構1/first.jpg)
  2. 接續訓練，嘗試使用SGD(不同的學習率、不同的動量值、權重衰減不同強度)+有無學習率計畫(餘弦重啟、Epoch衰減)、上一段的設定，最終以上一段的設定表現最佳。準確率變化如下圖。\
  ![image](/picture/架構1/接續.bmp)
-
 </details>
 <details>
    <a name="架構2訓練過程"></a>
@@ -134,9 +133,17 @@
 
    1. 使用AdamW(weight_decay=0.0005)+學習率計畫(餘弦重啟)，準確率變化如下圖。\
    ![image](/picture/架構2/first.bmp)
-   2. 取上一段第13個Epoch的模型接續訓練，使用SGD(相同學習率、相同動量值、權重衰減不同強度)+有無學習率計畫(每個Epoch衰減0.5)。表現最佳的準確率變化如下圖。\
+   2. 取上一段第13個Epoch的模型接續訓練，使用SGD(相同學習率、相同動量值、權重衰減不同強度)+有無學習率計畫(每個Epoch衰減0.5)。參數表現最佳的準確率變化如下圖。\
    ![image](/picture/架構2/接續.bmp)
+</details>
+<details>
+ <a name="架構3訓練過程"></a>
+  <summary>架構3訓練過程</summary>
 
+ 1. 使用AdamW(weight_decay=0.003)+學習率計畫(每個Epoch衰減0.6)。準確率變化如下圖。\ 
+ ![image](/picture/架構3/first.bmp)
+ 2. 取上一段第7個Epoch的模型接續訓練，使用SGD(learning_rate=0.05,momentum=0.4,weight_decay=0.005)+學習率計畫(每個Epoch衰減0.6)。準確率變化如下圖。\
+ ![image](/picture/架構3/接續.bmp)
 </details>
 
 # 使用到的模組及版本
