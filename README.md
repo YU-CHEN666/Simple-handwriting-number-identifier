@@ -74,58 +74,11 @@
  <a name="架構1訓練過程"></a>
  <summary>架構1訓練過程</summary>
    
- 1. 使用Adam+學習率計畫(*若使用方式1的話，_所有鍵盤操作必須按2次，程式才會有反應_**，因此建議使用方法2。
-
-</details>
-<details>
- <a name="會觸發警告的範例"></a>                            
- <summary>會觸發警告的範例</summary>
-
- 1. 一位數時:書寫數字5的過程不連續，有斷點。\
- ![image](/picture/觸發警告範例/1-0.bmp)
- 2. 二位數時:數字歪斜+間隔過近。\
- ![image](/picture/觸發警告範例/2-0.png)
-
-</details>
-<details>
-   <a name="關於數字7的注意事項"></a> 
-   <summary>關於數字7的注意事項</summary>
-
-   1. 一位數時:書寫過程不連續有斷點，**絕對會辨識錯誤**，辨識成二位數。\
-   ![image](/picture/數字7注意事項/1.bmp)
-   2. 二位數時:此情況下進行辨識操作，程式不會有任反應，直到你清除重寫，再進行辨識操作。\
-   ![image](/picture/數字7注意事項/2.png)
-    
-</details>
-<details>
- <a name="辨識操作程式不會有反應的情況"></a>
- <summary>辨識操作程式不會有反應的情況</summary>
-
- 1. 輸入法為中文模式，程式無法偵測到你給予的指令。
- 2. 程式判定目前書寫的數字超過2位數，幾使是一點程式仍然會判定為一位。\
- ![image](/picture/沒反應情況/0.png) ![image](/picture/沒反應情況/1.png)
-
-</details>
-
-# 模型
-<details>
-   <a name="模型架構比較"></a> 
-   <summary>模型架構比較</summary>
-
-   ![image](/picture/架構比較.bmp)\
-   :large_orange_diamond: 架構設計順序: 架構1:arrow_right:架構2:arrow_right:架構3\
-   :large_orange_diamond: 對於ELAN:
-   - 架構1: 使用1x1捲積進行分割。
-   - 架構2&3: 使用自定義層進行分割，而且不涉及任何參數的訓練。
-</details>
-<details>
- <a name="架構1訓練過程"></a>
- <summary>架構1訓練過程</summary>
-   
  1. 使用Adam+學習率計畫(餘弦重啟)，因為只設定20個epoch，只能先停止，準確率變化如下圖。\
  ![image](/picture/架構1/first.jpg)
  2. 接續訓練，嘗試使用SGD(不同的學習率、不同的動量值、權重衰減不同強度)+有無學習率計畫(餘弦重啟、Epoch衰減)、上一段的設定，最終以上一段的設定表現最佳。準確率變化如下圖。\
  ![image](/picture/架構1/接續.bmp)
+
 </details>
 <details>
    <a name="架構2訓練過程"></a>
@@ -135,6 +88,7 @@
    ![image](/picture/架構2/first.bmp)
    2. 取上一段第13個Epoch的模型接續訓練，使用SGD(相同學習率、相同動量值、權重衰減不同強度)+有無學習率計畫(每個Epoch衰減0.5)。參數表現最佳的準確率變化如下圖。\
    ![image](/picture/架構2/接續.bmp)
+
 </details>
 <details>
  <a name="架構3訓練過程"></a>
@@ -144,8 +98,9 @@
  ![image](/picture/架構3/first.bmp)
  2. 取上一段第7個Epoch的模型接續訓練，使用SGD(learning_rate=0.05,momentum=0.4,weight_decay=0.005)+學習率計畫(每個Epoch衰減0.6)。準確率變化如下圖。\
  ![image](/picture/架構3/接續.bmp)
+
 </details>
 
 :ballot_box_with_check:最終決定選擇，架構2紅色框框的Epoch做為辨識器的模型。
-
 # 使用到的模組及版本
+
