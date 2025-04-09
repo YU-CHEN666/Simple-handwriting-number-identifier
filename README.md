@@ -140,10 +140,12 @@
  <a name="架構3訓練過程"></a>
   <summary>架構3訓練過程</summary>
 
- 1. 使用AdamW(weight_decay=0.003)+學習率計畫(每個Epoch衰減0.6)。準確率變化如下圖。\ 
+ 1. 使用AdamW(weight_decay=0.003)+學習率計畫(每個Epoch衰減0.6)。準確率變化如下圖。\
  ![image](/picture/架構3/first.bmp)
  2. 取上一段第7個Epoch的模型接續訓練，使用SGD(learning_rate=0.05,momentum=0.4,weight_decay=0.005)+學習率計畫(每個Epoch衰減0.6)。準確率變化如下圖。\
  ![image](/picture/架構3/接續.bmp)
 </details>
+
+:ballot_box_with_check:最終決定選擇，架構2紅色框框的Epoch做為辨識器的模型。
 
 # 使用到的模組及版本
