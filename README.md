@@ -17,8 +17,8 @@
  執行程式後，會有操作說明視窗，請遵循說明操作。
 > [!IMPORTANT]
 > 在執行鍵盤操作前，請先確定輸入法是**英文模式(打出英文字母)**，這樣程式才會有反應。
+<a name="關閉警告、結果視窗"></a>
 <details>
- <a name="關閉警告、結果視窗"></a>
  <summary>關閉警告、結果視窗(按下最左邊的三角型展開內容)</summary>
 
  有以下兩種方式:
@@ -28,8 +28,8 @@
  **若使用方式1的話，_所有鍵盤操作必須按2次，程式才會有反應_**，因此建議使用方法2。
 
 </details>
-<details>
- <a name="會觸發警告的範例"></a>                            
+<a name="會觸發警告的範例"></a> 
+<details>                           
  <summary>會觸發警告的範例</summary>
 
  1. 一位數時:書寫數字5的過程不連續，有斷點。\
@@ -38,8 +38,8 @@
  ![image](/picture/觸發警告範例/2-0.png)
 
 </details>
-<details>
-   <a name="關於數字7的注意事項"></a> 
+<a name="關於數字7的注意事項"></a>
+<details> 
    <summary>關於數字7的注意事項</summary>
 
    1. 一位數時:書寫過程不連續有斷點，**絕對會辨識錯誤**，辨識成二位數。\
@@ -48,8 +48,8 @@
    ![image](/picture/數字7注意事項/2.png)
     
 </details>
+<a name="辨識操作程式不會有反應的情況"></a>
 <details>
- <a name="辨識操作程式不會有反應的情況"></a>
  <summary>辨識操作程式不會有反應的情況</summary>
 
  1. 輸入法為中文模式，程式無法偵測到你給予的指令。
@@ -70,8 +70,8 @@
    - 架構2&3: 使用自定義層進行分割，而且不涉及任何參數的訓練。
 
 </details>
+<a name="架構1訓練過程"></a>
 <details>
- <a name="架構1訓練過程"></a>
  <summary>架構1訓練過程</summary>
    
  1. 使用Adam+學習率計畫(餘弦重啟)，因為只設定20個Epoch，只能先停止，準確率變化如下圖。\
@@ -80,8 +80,8 @@
  ![image](/picture/架構1/接續.bmp)
 
 </details>
+<a name="架構2訓練過程"></a>
 <details>
-   <a name="架構2訓練過程"></a>
    <summary>架構2訓練過程</summary>
 
    1. 使用AdamW(weight_decay=0.0005)+學習率計畫(餘弦重啟)，準確率變化如下圖。\
@@ -90,8 +90,8 @@
    ![image](/picture/架構2/接續.bmp)
 
 </details>
+<a name="架構3訓練過程"></a>
 <details>
- <a name="架構3訓練過程"></a>
   <summary>架構3訓練過程</summary>
 
  1. 使用AdamW(weight_decay=0.003)+學習率計畫(每個Epoch衰減0.6)。準確率變化如下圖。\
