@@ -59,8 +59,8 @@
 </details>
 
 # 模型
+<a name="模型架構比較"></a> 
 <details>
-   <a name="模型架構比較"></a> 
    <summary>模型架構比較</summary>
 
    ![image](/picture/架構比較.bmp)\
@@ -74,7 +74,7 @@
  <a name="架構1訓練過程"></a>
  <summary>架構1訓練過程</summary>
    
- 1. 使用Adam+學習率計畫(餘弦重啟)，因為只設定20個epoch，只能先停止，準確率變化如下圖。\
+ 1. 使用Adam+學習率計畫(餘弦重啟)，因為只設定20個Epoch，只能先停止，準確率變化如下圖。\
  ![image](/picture/架構1/first.jpg)
  2. 接續訓練，嘗試使用SGD(不同的學習率、不同的動量值、權重衰減不同強度)+有無學習率計畫(餘弦重啟、Epoch衰減)、上一段的設定，最終以上一段的設定表現最佳。準確率變化如下圖。\
  ![image](/picture/架構1/接續.bmp)
