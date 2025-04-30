@@ -1,2 +1,2 @@
 若不想建置python環境，想直接使用。可至下列網址下載，已編譯好的執行擋，下載完即可馬上使用!!!!!!!!!!
-https://drive.google.com/file/d/1rFLodY4YtvfMjU0nml9r3126uTbdtf1e/view?usp=sharing
+https://drive.google.com/file/d/1AcF_vY-hMBukTpyZechPu5fY7mg5DGs6/view?usp=sharing
