@@ -11,6 +11,7 @@
    - [架構2訓練過程](#架構2訓練過程)
    - [架構3訓練過程](#架構3訓練過程)
 - [使用到的模組及版本](#使用到的模組及版本)
+- [實際運作影片](#實際運作影片)
 # 簡介
  使用OpenCV來獲取手寫數字，搭配預先訓練好的神經網路模型，進行辨識再顯示結果，一個簡易的手寫數字辨識器就此誕生 :exclamation: :exclamation: :exclamation: :exclamation: :exclamation:
 # 操作方法
@@ -110,5 +111,7 @@
 |opencv|4.10.0.84|
 |tensorflow|2.17.0|
 |keras|3.5.0 ~ 3.9.2|
+# 實際運作影片
+網址:[https://youtu.be/vxHr5TB-NkQ?si=49C10DG65ANYiyS-](https://youtu.be/vxHr5TB-NkQ?si=49C10DG65ANYiyS-)
 
 
