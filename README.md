@@ -116,7 +116,7 @@
 ```cmd
 pip install -r C:\Users\123\Desktop\requirements.txt
 ```
-請將requirements.txt路徑，改為你電腦上的絕對路徑
+請先下載requirements.txt，再把路徑改為你電腦上的絕對路徑
 # 實際運作影片
 網址:[https://youtu.be/vxHr5TB-NkQ?si=49C10DG65ANYiyS-](https://youtu.be/vxHr5TB-NkQ?si=49C10DG65ANYiyS-)
 
