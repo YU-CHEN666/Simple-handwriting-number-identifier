@@ -111,6 +111,12 @@
 |opencv-python|4.10.0.84|
 |tensorflow|2.17.0|
 |keras|3.5.0 ~ 3.9.2|
+
+可使用下列指令一次性安裝所有模組:
+```cmd
+pip install -r C:\Users\123\Desktop\requirements.txt
+```
+請將requirements.txt路徑，改為你電腦上的絕對路徑
 # 實際運作影片
 網址:[https://youtu.be/vxHr5TB-NkQ?si=49C10DG65ANYiyS-](https://youtu.be/vxHr5TB-NkQ?si=49C10DG65ANYiyS-)
 
